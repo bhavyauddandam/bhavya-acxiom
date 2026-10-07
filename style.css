@@ -1,0 +1,472 @@
+/* =====================================
+   GENERAL
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f5f5f5;
+
+    color: #222;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a {
+    color: #333;
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    background: #222;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.header-title {
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+
+    padding: 5px;
+}
+
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.container {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 30px auto;
+}
+
+.small-container {
+    max-width: 700px;
+}
+
+.page-description {
+    color: #666;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.button,
+button {
+    display: inline-block;
+
+    background: #222;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 16px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+.button:hover,
+button:hover {
+    background: #444;
+
+    text-decoration: none;
+}
+
+.secondary {
+    background: #777;
+}
+
+.delete-link {
+    color: #b00020;
+}
+
+
+/* =====================================
+   DASHBOARD CARDS
+===================================== */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 15px;
+
+    margin: 25px 0;
+}
+
+.card {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 15px;
+
+    color: #666;
+}
+
+.card strong {
+    font-size: 28px;
+}
+
+
+/* =====================================
+   PIPELINE
+===================================== */
+
+.pipeline {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    margin-bottom: 25px;
+}
+
+.pipeline p {
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   QUICK LINKS
+===================================== */
+
+.quick-links {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+}
+
+.quick-links .button {
+    margin-right: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   FORMS
+===================================== */
+
+.form-box {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #bbb;
+
+    font-size: 14px;
+
+    background: white;
+}
+
+textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #999;
+}
+
+
+/* =====================================
+   SEARCH
+===================================== */
+
+.search-box {
+    display: flex;
+
+    gap: 10px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    padding: 15px;
+
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+}
+
+.search-box select {
+    width: 180px;
+}
+
+
+/* =====================================
+   TABLE
+===================================== */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+
+    padding: 10px;
+
+    text-align: left;
+
+    vertical-align: top;
+}
+
+th {
+    background: #eee;
+
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: #fafafa;
+}
+
+
+/* =====================================
+   MESSAGE
+===================================== */
+
+.message {
+    background: #eeeeee;
+
+    border: 1px solid #cccccc;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================
+   EMPTY
+===================================== */
+
+.empty {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    color: #666;
+}
+
+
+/* =====================================
+   LOGIN
+===================================== */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #f5f5f5;
+}
+
+.login-box {
+    width: 400px;
+
+    max-width: 90%;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    padding: 30px;
+}
+
+.login-box h1 {
+    text-align: center;
+}
+
+.login-box > p {
+    text-align: center;
+
+    color: #666;
+}
+
+.login-box label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+}
+
+.login-box button {
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+.login-info {
+    margin-top: 25px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #ddd;
+
+    font-size: 13px;
+
+    color: #666;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 800px) {
+
+    header {
+        display: block;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box {
+        display: block;
+    }
+
+    .search-box input,
+    .search-box select,
+    .search-box button,
+    .search-box .button {
+        width: 100%;
+
+        margin-bottom: 8px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+}
