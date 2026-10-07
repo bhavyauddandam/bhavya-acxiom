@@ -1,0 +1,70 @@
+<html>
+<head>
+    <center><title>AcxiomCRM Login</title></center>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body class="login-page">
+
+<div class="login-box">
+
+    <center><h1>AcxiomCRM</h1></center>
+
+    <center><b><p>Customer Relationship Management System</p></b></center>
+
+
+    <form method="POST">
+
+        <input
+            type="hidden"
+            name="csrf_token"
+            value="{{ csrf_token }}"
+        >
+
+        <center><label>Email</label></center>
+
+        <center><input
+            type="email"
+            name="email"
+            required
+        ></center><br></br>
+
+
+        <center><label>Password</label></center>
+
+        <center><input
+            type="password"
+            name="password"
+            required
+        ></center><br></br>
+
+
+        <center><button type="submit">
+            Login
+        </button></Center>
+
+    </form>
+
+
+    <div class="login-info">
+
+        <p><b>Demo Accounts</b></p>
+
+        <p>Admin: admin@gmail.com / admin123</p>
+
+        <p>Manager: manager@gmail.com / manager123</p>
+
+        <p>Sales: sales@gmail.com / sales123</p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
